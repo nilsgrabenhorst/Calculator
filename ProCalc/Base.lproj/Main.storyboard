@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +15,323 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hHP-xf-5bY">
+                                <rect key="frame" x="16" y="197.66666666666669" width="343" height="536.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qdd-cH-knG">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="95.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <color key="textColor" name="Number"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fh5-VA-mQE">
+                                        <rect key="frame" x="0.0" y="105.66666666666666" width="343" height="78.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veZ-Jx-sud" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="OtherButtonBackground"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="veZ-Jx-sud" secondAttribute="height" multiplier="1:1" id="hN4-0a-eqi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="OtherButtonTitle"/>
+                                                </state>
+                                                <variation key="heightClass=compact-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <exclude reference="hN4-0a-eqi"/>
+                                                    </mask>
+                                                </variation>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuY-GT-143" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="OtherButtonBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="OtherButtonTitle"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6G-hA-iDy" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="OtherButtonBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="OtherButtonTitle"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1n-4r-VMo" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="OperatorBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="3"/>
+                                                <state key="normal" title="÷">
+                                                    <color key="titleColor" name="Operator"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kN4-Uy-8t6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V5m-3g-WS3">
+                                        <rect key="frame" x="0.0" y="194.00000000000003" width="343" height="78.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIK-lI-0Ne" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bmh-bs-ERc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-iZ-tUK" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kBQ-c8-hlA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uw-zi-66s" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xgr-57-5fX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mx5-F5-XD7" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="OperatorBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="3"/>
+                                                <state key="normal" title="×">
+                                                    <color key="titleColor" name="Operator"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uwl-a0-V3d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yi7-zY-yiv">
+                                        <rect key="frame" x="0.0" y="282.33333333333337" width="343" height="78.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZt-BR-4dU" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3DH-fR-SpJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4On-qm-Xfw" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y3x-yC-RcP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wcb-j2-riJ" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zk5-Ly-JkM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JM-YO-dMW" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="OperatorBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="3"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" name="Operator"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Crx-jx-nn7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ulJ-CT-ivs">
+                                        <rect key="frame" x="0.0" y="370.66666666666674" width="343" height="77.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hK-76-qVc" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="77.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ura-WG-vU5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7I-Jh-pgS" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="88.333333333333343" y="0.0" width="78.333333333333343" height="77.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yld-Fy-XMp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyu-RP-yrQ" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="77.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hn-Qc-UlL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwV-nZ-cjp" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="77.333333333333329"/>
+                                                <color key="backgroundColor" name="OperatorBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="3"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" name="Operator"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhc-2M-I1i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sH3-8W-aLp">
+                                        <rect key="frame" x="0.0" y="458" width="343" height="78.333333333333371"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4l-KP-lYG" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.66666666666666" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="digitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rKd-jQ-bnX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umz-wP-Oh7" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="176.66666666666666" y="0.0" width="78" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="NumberBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="Number"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sj-37-Gqu" customClass="RoundedButton" customModule="ProCalc" customModuleProvider="target">
+                                                <rect key="frame" x="264.66666666666669" y="0.0" width="78.333333333333314" height="78.333333333333329"/>
+                                                <color key="backgroundColor" name="OperatorBackground"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="-3" maxX="0.0" maxY="3"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" name="Operator"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="operatorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="07j-Wr-7yZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7hK-76-qVc" firstAttribute="height" secondItem="lZt-BR-4dU" secondAttribute="height" id="0Yn-fn-1DC"/>
+                                    <constraint firstItem="lZt-BR-4dU" firstAttribute="height" secondItem="WIK-lI-0Ne" secondAttribute="height" id="12u-SM-jR7"/>
+                                    <constraint firstItem="WIK-lI-0Ne" firstAttribute="height" secondItem="veZ-Jx-sud" secondAttribute="height" id="K7b-2C-fxz"/>
+                                    <constraint firstItem="Umz-wP-Oh7" firstAttribute="width" secondItem="fyu-RP-yrQ" secondAttribute="width" id="MGs-k9-1Ll"/>
+                                    <constraint firstItem="a4l-KP-lYG" firstAttribute="height" secondItem="7hK-76-qVc" secondAttribute="height" id="Qcc-Tu-7x5"/>
+                                    <constraint firstItem="7Sj-37-Gqu" firstAttribute="width" secondItem="SwV-nZ-cjp" secondAttribute="width" id="rjZ-eM-9BA"/>
+                                    <constraint firstAttribute="width" constant="350" id="x3j-zD-9sy"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="x3j-zD-9sy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="x3j-zD-9sy"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="hHP-xf-5bY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Big-R8-h4x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hHP-xf-5bY" secondAttribute="bottom" constant="44" id="j6e-tQ-hop">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hHP-xf-5bY" secondAttribute="trailing" constant="16" id="opW-fm-0vR"/>
+                            <constraint firstItem="hHP-xf-5bY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" id="x43-Io-wrg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Big-R8-h4x"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="qdd-cH-knG" id="vJ9-vn-tlx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-418.39999999999998" y="-7.6461769115442282"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Number">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NumberBackground">
+            <color white="0.21299999952316284" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="Operator">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OperatorBackground">
+            <color red="1" green="0.57700002193450928" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OtherButtonBackground">
+            <color white="0.70300000905990601" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+        <namedColor name="OtherButtonTitle">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
