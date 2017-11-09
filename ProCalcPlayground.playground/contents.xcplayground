@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='1 Operators'/>
+        <page name='2 Expression'/>
+        <page name='3 Expression Evaluation'/>
+        <page name='4 Expression Builder'/>
+        <page name='5 Expression Builder Functionality'/>
+        <page name='6 The final calculator model'/>
+    </pages>
+</playground>
