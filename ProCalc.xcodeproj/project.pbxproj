@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		895BB8521FB3277000C1EC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895BB8511FB3277000C1EC76 /* AppDelegate.swift */; };
-		895BB8541FB3277000C1EC76 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895BB8531FB3277000C1EC76 /* CalculatorViewController.swift */; };
+		895BB8541FB3277000C1EC76 /* ProCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895BB8531FB3277000C1EC76 /* ProCalcViewController.swift */; };
 		895BB8571FB3277100C1EC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895BB8551FB3277100C1EC76 /* Main.storyboard */; };
 		895BB8591FB3277100C1EC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895BB8581FB3277100C1EC76 /* Assets.xcassets */; };
 		895BB85C1FB3277100C1EC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895BB85A1FB3277100C1EC76 /* LaunchScreen.storyboard */; };
@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		895BB84E1FB3277000C1EC76 /* ProCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		895BB8511FB3277000C1EC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		895BB8531FB3277000C1EC76 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		895BB8531FB3277000C1EC76 /* ProCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCalcViewController.swift; sourceTree = "<group>"; };
 		895BB8561FB3277100C1EC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		895BB8581FB3277100C1EC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		895BB85B1FB3277100C1EC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				895BB8511FB3277000C1EC76 /* AppDelegate.swift */,
-				895BB8531FB3277000C1EC76 /* CalculatorViewController.swift */,
+				895BB8531FB3277000C1EC76 /* ProCalcViewController.swift */,
 				895BB8551FB3277100C1EC76 /* Main.storyboard */,
 				895BB8581FB3277100C1EC76 /* Assets.xcassets */,
 				895BB85A1FB3277100C1EC76 /* LaunchScreen.storyboard */,
@@ -211,7 +211,7 @@
 				896843281FB3517D009BBA44 /* Expression.swift in Sources */,
 				8968432C1FB38021009BBA44 /* RoundedButton.swift in Sources */,
 				8968432A1FB35960009BBA44 /* ExpressionBuilder.swift in Sources */,
-				895BB8541FB3277000C1EC76 /* CalculatorViewController.swift in Sources */,
+				895BB8541FB3277000C1EC76 /* ProCalcViewController.swift in Sources */,
 				895BB8521FB3277000C1EC76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CalculatorViewController: UIViewController {
+class ProCalcViewController: UIViewController {
 	
 	@IBOutlet weak var resultLabel: UILabel!
 	
